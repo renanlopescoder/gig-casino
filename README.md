@@ -1,4 +1,4 @@
-# ![GIG](https://www.gig.com/uploads/2018/07/9df573aa-gig-logo-black.svg =150x100)
+# ![GIG](https://www.gig.com/uploads/2018/07/9df573aa-gig-logo-black.svg)
 
 Application using React, Redux, Redux Saga and React Bootstrap.
 
