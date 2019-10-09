@@ -1,0 +1,16 @@
+runtime: nodejs
+env: flex
+automatic_scaling:
+    min_num_instances: 1
+    max_num_instances: 10
+    cool_down_period_sec: 180
+    cpu_utilization:
+        target_utilization: 0.9
+resources:
+    cpu: 2
+    memory_gb: 4.6
+    disk_size_gb: 10
+network:
+    name: default
+env_variables:
+    NODE_ENV: production

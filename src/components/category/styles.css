@@ -1,0 +1,24 @@
+.title {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.list {
+    font-size: 12px;
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.list-item-not-selected {
+    color: gray;
+}
+
+.list-item-selected {
+    color: orange;
+}

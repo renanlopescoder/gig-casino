@@ -1,0 +1,106 @@
+[
+    {
+        "id": 24,
+        "displayName": "Recommended",
+        "visible": true,
+        "languageID": 5,
+        "tag": "recommended",
+        "languageCode": "de"
+    },
+    {
+        "id": 25,
+        "displayName": "Top 20",
+        "visible": true,
+        "languageID": 5,
+        "tag": "top20",
+        "languageCode": "de"
+    },
+    {
+        "id": 26,
+        "displayName": "Video Slots",
+        "visible": true,
+        "languageID": 5,
+        "tag": "videoslots",
+        "languageCode": "de"
+    },
+    {
+        "id": 27,
+        "displayName": "Classic Slots",
+        "visible": true,
+        "languageID": 5,
+        "tag": "classicslots",
+        "languageCode": "de"
+    },
+    {
+        "id": 28,
+        "displayName": "3D Slots",
+        "visible": true,
+        "languageID": 5,
+        "tag": "3dslots",
+        "languageCode": "de"
+    },
+    {
+        "id": 29,
+        "displayName": "Live Casino",
+        "visible": true,
+        "languageID": 5,
+        "tag": "livecasino",
+        "languageCode": "de"
+    },
+    {
+        "id": 30,
+        "displayName": "Blackjack",
+        "visible": true,
+        "languageID": 5,
+        "tag": "blackjack",
+        "languageCode": "de"
+    },
+    {
+        "id": 31,
+        "displayName": "Roulette",
+        "visible": true,
+        "languageID": 5,
+        "tag": "roulette",
+        "languageCode": "de"
+    },
+    {
+        "id": 32,
+        "displayName": "Table Games",
+        "visible": true,
+        "languageID": 5,
+        "tag": "tablegames",
+        "languageCode": "de"
+    },
+    {
+        "id": 33,
+        "displayName": "Video Poker",
+        "visible": true,
+        "languageID": 5,
+        "tag": "videopoker",
+        "languageCode": "de"
+    },
+    {
+        "id": 34,
+        "displayName": "Jackpot",
+        "visible": true,
+        "languageID": 5,
+        "tag": "jackpot",
+        "languageCode": "de"
+    },
+    {
+        "id": 35,
+        "displayName": "Other Games",
+        "visible": true,
+        "languageID": 5,
+        "tag": "othergames",
+        "languageCode": "de"
+    },
+    {
+        "id": 37,
+        "displayName": "All Games",
+        "visible": true,
+        "languageID": 5,
+        "tag": "allgames",
+        "languageCode": "de"
+    }
+]
