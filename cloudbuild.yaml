@@ -1,4 +1,25 @@
 steps:
+    # build the container image
+    - name: "gcr.io/cloud-builders/docker"
+      args: ["build", "-t", "gcr.io/gig-casino/gig-casino:${SHORT_SHA}", "."]
+      # push the container image to Container Registry
+    - name: "gcr.io/cloud-builders/docker"
+      args: ["push", "gcr.io/gig-casino/gig-casino"]
+      # deploy container image to Cloud Run
     - name: "gcr.io/cloud-builders/gcloud"
-      args: ["app", "deploy"]
-timeout: "1600s"
+      args:
+          [
+              "beta",
+              "run",
+              "deploy",
+              "gig-casino",
+              "--image",
+              "gcr.io/gig-casino/gig-casino:${SHORT_SHA}",
+              "--region",
+              "us-central1",
+              "--allow-unauthenticated",
+          ]
+      env:
+          - "PORT=8080"
+images:
+    - gcr.io/gig-casino/gig-casino
