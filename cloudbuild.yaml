@@ -1,10 +1,10 @@
 steps:
     # build the container image
     - name: "gcr.io/cloud-builders/docker"
-      args: ["build", "-t", "gcr.io/gig-casino/gig-casino:${SHORT_SHA}", "."]
+      args: ["build", "-t", "gcr.io/$PROJECT_ID/gig-casino:${SHORT_SHA}", "."]
       # push the container image to Container Registry
     - name: "gcr.io/cloud-builders/docker"
-      args: ["push", "gcr.io/gig-casino/gig-casino"]
+      args: ["push", "gcr.io/$PROJECT_ID/gig-casino"]
       # deploy container image to Cloud Run
     - name: "gcr.io/cloud-builders/gcloud"
       args:
@@ -14,7 +14,7 @@ steps:
               "deploy",
               "gig-casino",
               "--image",
-              "gcr.io/gig-casino/gig-casino:${SHORT_SHA}",
+              "gcr.io/$PROJECT_ID/gig-casino:${SHORT_SHA}",
               "--region",
               "us-central1",
               "--allow-unauthenticated",
@@ -22,4 +22,4 @@ steps:
       env:
           - "PORT=8080"
 images:
-    - gcr.io/gig-casino/gig-casino
+    - gcr.io/$PROJECT_ID/gig-casino
