@@ -23,7 +23,7 @@ class Category extends Component {
     render() {
         return (
             <>
-                <h1 className="title">CASINO GAMES CATEGORY</h1>
+                <h1 className="title">CATEGORY</h1>
                 <ol className="list">
                     {this.props.categories.map(item => {
                         return (
