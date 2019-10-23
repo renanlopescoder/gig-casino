@@ -18,6 +18,8 @@ steps:
               "--region",
               "us-central1",
               "--allow-unauthenticated",
+              "--platform",
+              "managed",
           ]
       env:
           - "PORT=8080"
